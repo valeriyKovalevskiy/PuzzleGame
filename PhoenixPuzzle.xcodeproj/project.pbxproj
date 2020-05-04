@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C7C2792221859C0078FE30 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C7C2782221859C0078FE30 /* Launch Screen.storyboard */; };
+		21C1A3A4F9C487481740FA6E /* Pods_PhoenixPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26EAAB5ADF9A26FC47C06CE /* Pods_PhoenixPuzzle.framework */; };
+		3F2878D7220C488100F52963 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2878D6220C488100F52963 /* GameKit.framework */; };
+		3F6CB4EF220432630034DD3A /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CB4EB220432630034DD3A /* Options.swift */; };
+		3F6CB4F2220432630034DD3A /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CB4EE220432630034DD3A /* GameSettings.swift */; };
+		3F6CB4F422045A630034DD3A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CB4F322045A630034DD3A /* SettingViewController.swift */; };
+		786492F923C0B08400187933 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786492F823C0B08400187933 /* AudioManager.swift */; };
+		7864930923C0B16700187933 /* Level_7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 786492FB23C0B16600187933 /* Level_7.mp3 */; };
+		7864930A23C0B16700187933 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 786492FC23C0B16600187933 /* fire.mp3 */; };
+		7864930B23C0B16700187933 /* button_press.wav in Resources */ = {isa = PBXBuildFile; fileRef = 786492FD23C0B16600187933 /* button_press.wav */; };
+		7864930C23C0B16700187933 /* Level_10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 786492FE23C0B16600187933 /* Level_10.mp3 */; };
+		7864930D23C0B16700187933 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 786492FF23C0B16600187933 /* Ka-Ching.wav */; };
+		7864930E23C0B16700187933 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7864930023C0B16600187933 /* Scrape.wav */; };
+		7864930F23C0B16700187933 /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7864930123C0B16600187933 /* Error.wav */; };
+		7864931023C0B16700187933 /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7864930223C0B16600187933 /* Chomp.wav */; };
+		7864931123C0B16700187933 /* MenuDecline.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7864930323C0B16600187933 /* MenuDecline.wav */; };
+		7864931223C0B16700187933 /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7864930423C0B16700187933 /* Drip.wav */; };
+		7864931323C0B16700187933 /* Level_8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7864930523C0B16700187933 /* Level_8.mp3 */; };
+		7864931423C0B16700187933 /* Level_9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7864930623C0B16700187933 /* Level_9.mp3 */; };
+		7864931523C0B16700187933 /* Karibu Watu Wangu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7864930723C0B16700187933 /* Karibu Watu Wangu.mp3 */; };
+		7864931623C0B16700187933 /* MenuAccept.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7864930823C0B16700187933 /* MenuAccept.mp3 */; };
+		7864931923C0B21600187933 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7864931823C0B21600187933 /* Settings.swift */; };
+		78A21DD323C6044B005023CC /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21DD223C6044A005023CC /* HapticManager.swift */; };
+		78F657F923C4D75B0019C205 /* LevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F657F823C4D75B0019C205 /* LevelController.swift */; };
+		78F657FB23C4D8100019C205 /* LevelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F657FA23C4D8100019C205 /* LevelController.xib */; };
+		78F6580E23C4DFD10019C205 /* Level_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78F6580823C4DFD00019C205 /* Level_2.mp3 */; };
+		78F6580F23C4DFD10019C205 /* Level_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78F6580923C4DFD10019C205 /* Level_4.mp3 */; };
+		78F6581023C4DFD10019C205 /* Level_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78F6580A23C4DFD10019C205 /* Level_3.mp3 */; };
+		78F6581123C4DFD10019C205 /* Level_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78F6580B23C4DFD10019C205 /* Level_1.mp3 */; };
+		78F6581223C4DFD10019C205 /* Level_6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78F6580C23C4DFD10019C205 /* Level_6.mp3 */; };
+		78F6581323C4DFD10019C205 /* Level_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78F6580D23C4DFD10019C205 /* Level_5.mp3 */; };
+		9A619FEB220396FB001932C4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A619FE8220396FB001932C4 /* APIManager.swift */; };
+		9A619FED2203974B001932C4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A619FEC2203974B001932C4 /* LoadingViewController.swift */; };
+		9A619FEF22039894001932C4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A619FEE22039894001932C4 /* MenuViewController.swift */; };
+		9A619FF32205DA1F001932C4 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A619FF22205DA1F001932C4 /* GameOverViewController.swift */; };
+		9AB2BBB123E03B370088D4C7 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2BBAD23E03B360088D4C7 /* RemoteConfigManager.swift */; };
+		9AB2BBB223E03B370088D4C7 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2BBAE23E03B360088D4C7 /* AdManager.swift */; };
+		9AB2BBB323E03B370088D4C7 /* AdSettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2BBAF23E03B370088D4C7 /* AdSettingsStorage.swift */; };
+		9AB2BBB423E03B370088D4C7 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2BBB023E03B370088D4C7 /* Keychain.swift */; };
+		9AB2BBB723E03B540088D4C7 /* InitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2BBB623E03B540088D4C7 /* InitConstants.swift */; };
+		9AB2BBB923E03D460088D4C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2BBB823E03D460088D4C7 /* GoogleService-Info.plist */; };
+		9ACB500F220724DC00655C46 /* Kraft.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB500E220724DC00655C46 /* Kraft.otf */; };
+		D0386F5C1B0E734500E6D38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0386F5B1B0E734500E6D38C /* AppDelegate.swift */; };
+		D0386F5E1B0E734500E6D38C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0386F5D1B0E734500E6D38C /* GameViewController.swift */; };
+		D0386F611B0E734500E6D38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0386F5F1B0E734500E6D38C /* Main.storyboard */; };
+		D0386F631B0E734500E6D38C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0386F621B0E734500E6D38C /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03C7C2782221859C0078FE30 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3F2878D6220C488100F52963 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		3F6CB4EB220432630034DD3A /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		3F6CB4EE220432630034DD3A /* GameSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		3F6CB4F322045A630034DD3A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		3F6CB4FE22087BE00034DD3A /* JokerTiler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JokerTiler.entitlements; sourceTree = "<group>"; };
+		786492F823C0B08400187933 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		786492FB23C0B16600187933 /* Level_7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_7.mp3; sourceTree = "<group>"; };
+		786492FC23C0B16600187933 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		786492FD23C0B16600187933 /* button_press.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_press.wav; sourceTree = "<group>"; };
+		786492FE23C0B16600187933 /* Level_10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_10.mp3; sourceTree = "<group>"; };
+		786492FF23C0B16600187933 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		7864930023C0B16600187933 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		7864930123C0B16600187933 /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		7864930223C0B16600187933 /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		7864930323C0B16600187933 /* MenuDecline.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MenuDecline.wav; sourceTree = "<group>"; };
+		7864930423C0B16700187933 /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		7864930523C0B16700187933 /* Level_8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_8.mp3; sourceTree = "<group>"; };
+		7864930623C0B16700187933 /* Level_9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_9.mp3; sourceTree = "<group>"; };
+		7864930723C0B16700187933 /* Karibu Watu Wangu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Karibu Watu Wangu.mp3"; sourceTree = "<group>"; };
+		7864930823C0B16700187933 /* MenuAccept.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MenuAccept.mp3; sourceTree = "<group>"; };
+		7864931823C0B21600187933 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		78A21DD223C6044A005023CC /* HapticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		78F657F823C4D75B0019C205 /* LevelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelController.swift; sourceTree = "<group>"; };
+		78F657FA23C4D8100019C205 /* LevelController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelController.xib; sourceTree = "<group>"; };
+		78F6580823C4DFD00019C205 /* Level_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_2.mp3; sourceTree = "<group>"; };
+		78F6580923C4DFD10019C205 /* Level_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_4.mp3; sourceTree = "<group>"; };
+		78F6580A23C4DFD10019C205 /* Level_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_3.mp3; sourceTree = "<group>"; };
+		78F6580B23C4DFD10019C205 /* Level_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_1.mp3; sourceTree = "<group>"; };
+		78F6580C23C4DFD10019C205 /* Level_6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_6.mp3; sourceTree = "<group>"; };
+		78F6580D23C4DFD10019C205 /* Level_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Level_5.mp3; sourceTree = "<group>"; };
+		9A619FE8220396FB001932C4 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9A619FEC2203974B001932C4 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		9A619FEE22039894001932C4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9A619FF22205DA1F001932C4 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		9AB2BBAD23E03B360088D4C7 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
+		9AB2BBAE23E03B360088D4C7 /* AdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		9AB2BBAF23E03B370088D4C7 /* AdSettingsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdSettingsStorage.swift; sourceTree = "<group>"; };
+		9AB2BBB023E03B370088D4C7 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		9AB2BBB623E03B540088D4C7 /* InitConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitConstants.swift; sourceTree = "<group>"; };
+		9AB2BBB823E03D460088D4C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9ACB500E220724DC00655C46 /* Kraft.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kraft.otf; sourceTree = "<group>"; };
+		A785D6964096B8F2B9C8FA75 /* Pods-PhoenixPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoenixPuzzle.release.xcconfig"; path = "Target Support Files/Pods-PhoenixPuzzle/Pods-PhoenixPuzzle.release.xcconfig"; sourceTree = "<group>"; };
+		B26EAAB5ADF9A26FC47C06CE /* Pods_PhoenixPuzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoenixPuzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0386F561B0E734500E6D38C /* Phoenix Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phoenix Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0386F5A1B0E734500E6D38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0386F5B1B0E734500E6D38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0386F5D1B0E734500E6D38C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D0386F601B0E734500E6D38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0386F621B0E734500E6D38C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5976FFDCD98C1C5E4CB22D4 /* Pods-PhoenixPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoenixPuzzle.debug.xcconfig"; path = "Target Support Files/Pods-PhoenixPuzzle/Pods-PhoenixPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0386F531B0E734500E6D38C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2878D7220C488100F52963 /* GameKit.framework in Frameworks */,
+				21C1A3A4F9C487481740FA6E /* Pods_PhoenixPuzzle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F6CB4EA220432630034DD3A /* OptionsMVC */ = {
+			isa = PBXGroup;
+			children = (
+				3F6CB4EB220432630034DD3A /* Options.swift */,
+				3F6CB4EE220432630034DD3A /* GameSettings.swift */,
+			);
+			path = OptionsMVC;
+			sourceTree = "<group>";
+		};
+		73EAB498781AAD60B803A59E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F2878D6220C488100F52963 /* GameKit.framework */,
+				B26EAAB5ADF9A26FC47C06CE /* Pods_PhoenixPuzzle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		786492F723C0AC8E00187933 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				78A21DD223C6044A005023CC /* HapticManager.swift */,
+				786492F823C0B08400187933 /* AudioManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		786492FA23C0B10E00187933 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				78F6580B23C4DFD10019C205 /* Level_1.mp3 */,
+				78F6580823C4DFD00019C205 /* Level_2.mp3 */,
+				78F6580A23C4DFD10019C205 /* Level_3.mp3 */,
+				78F6580923C4DFD10019C205 /* Level_4.mp3 */,
+				78F6580D23C4DFD10019C205 /* Level_5.mp3 */,
+				78F6580C23C4DFD10019C205 /* Level_6.mp3 */,
+				786492FB23C0B16600187933 /* Level_7.mp3 */,
+				7864930523C0B16700187933 /* Level_8.mp3 */,
+				7864930623C0B16700187933 /* Level_9.mp3 */,
+				786492FE23C0B16600187933 /* Level_10.mp3 */,
+				786492FD23C0B16600187933 /* button_press.wav */,
+				7864930223C0B16600187933 /* Chomp.wav */,
+				7864930423C0B16700187933 /* Drip.wav */,
+				7864930123C0B16600187933 /* Error.wav */,
+				786492FC23C0B16600187933 /* fire.mp3 */,
+				786492FF23C0B16600187933 /* Ka-Ching.wav */,
+				7864930723C0B16700187933 /* Karibu Watu Wangu.mp3 */,
+				7864930823C0B16700187933 /* MenuAccept.mp3 */,
+				7864930323C0B16600187933 /* MenuDecline.wav */,
+				7864930023C0B16600187933 /* Scrape.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7864931723C0B20500187933 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7864931823C0B21600187933 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		78E9F0D723C48F94009C44DA /* LevelController */ = {
+			isa = PBXGroup;
+			children = (
+				78F657F823C4D75B0019C205 /* LevelController.swift */,
+				78F657FA23C4D8100019C205 /* LevelController.xib */,
+			);
+			path = LevelController;
+			sourceTree = "<group>";
+		};
+		9A619FE5220396FA001932C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2BBAE23E03B360088D4C7 /* AdManager.swift */,
+				9AB2BBAF23E03B370088D4C7 /* AdSettingsStorage.swift */,
+				9AB2BBB023E03B370088D4C7 /* Keychain.swift */,
+				9AB2BBAD23E03B360088D4C7 /* RemoteConfigManager.swift */,
+				9A619FE8220396FB001932C4 /* APIManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9AB2BBB523E03B540088D4C7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2BBB623E03B540088D4C7 /* InitConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C68E853BC346A035E107BC6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5976FFDCD98C1C5E4CB22D4 /* Pods-PhoenixPuzzle.debug.xcconfig */,
+				A785D6964096B8F2B9C8FA75 /* Pods-PhoenixPuzzle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0386F4D1B0E734500E6D38C = {
+			isa = PBXGroup;
+			children = (
+				D0386F581B0E734500E6D38C /* PhoenixPuzzle */,
+				D0386F571B0E734500E6D38C /* Products */,
+				73EAB498781AAD60B803A59E /* Frameworks */,
+				C68E853BC346A035E107BC6D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D0386F571B0E734500E6D38C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0386F561B0E734500E6D38C /* Phoenix Puzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0386F581B0E734500E6D38C /* PhoenixPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				78E9F0D723C48F94009C44DA /* LevelController */,
+				7864931723C0B20500187933 /* Settings */,
+				3F6CB4FE22087BE00034DD3A /* JokerTiler.entitlements */,
+				786492FA23C0B10E00187933 /* Sounds */,
+				786492F723C0AC8E00187933 /* Helpers */,
+				9AB2BBB523E03B540088D4C7 /* Constants */,
+				9A619FE5220396FA001932C4 /* Utils */,
+				3F6CB4EA220432630034DD3A /* OptionsMVC */,
+				D0386F5B1B0E734500E6D38C /* AppDelegate.swift */,
+				9A619FEC2203974B001932C4 /* LoadingViewController.swift */,
+				9A619FEE22039894001932C4 /* MenuViewController.swift */,
+				D0386F5D1B0E734500E6D38C /* GameViewController.swift */,
+				9A619FF22205DA1F001932C4 /* GameOverViewController.swift */,
+				3F6CB4F322045A630034DD3A /* SettingViewController.swift */,
+				D0386F5F1B0E734500E6D38C /* Main.storyboard */,
+				03C7C2782221859C0078FE30 /* Launch Screen.storyboard */,
+				9ACB500E220724DC00655C46 /* Kraft.otf */,
+				D0386F621B0E734500E6D38C /* Images.xcassets */,
+				D0386F591B0E734500E6D38C /* Supporting Files */,
+			);
+			path = PhoenixPuzzle;
+			sourceTree = "<group>";
+		};
+		D0386F591B0E734500E6D38C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2BBB823E03D460088D4C7 /* GoogleService-Info.plist */,
+				D0386F5A1B0E734500E6D38C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0386F551B0E734500E6D38C /* PhoenixPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0386F751B0E734500E6D38C /* Build configuration list for PBXNativeTarget "PhoenixPuzzle" */;
+			buildPhases = (
+				579B96DF7B124228DFAF8109 /* [CP] Check Pods Manifest.lock */,
+				D0386F521B0E734500E6D38C /* Sources */,
+				D0386F531B0E734500E6D38C /* Frameworks */,
+				D0386F541B0E734500E6D38C /* Resources */,
+				401E59983FFD57169FAFA79F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoenixPuzzle;
+			productName = "sliding-puzzle";
+			productReference = D0386F561B0E734500E6D38C /* Phoenix Puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0386F4E1B0E734500E6D38C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					D0386F551B0E734500E6D38C = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = PNS557CH6G;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D0386F511B0E734500E6D38C /* Build configuration list for PBXProject "PhoenixPuzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = D0386F4D1B0E734500E6D38C;
+			productRefGroup = D0386F571B0E734500E6D38C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0386F551B0E734500E6D38C /* PhoenixPuzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0386F541B0E734500E6D38C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACB500F220724DC00655C46 /* Kraft.otf in Resources */,
+				7864931423C0B16700187933 /* Level_9.mp3 in Resources */,
+				7864931223C0B16700187933 /* Drip.wav in Resources */,
+				7864930923C0B16700187933 /* Level_7.mp3 in Resources */,
+				78F6580F23C4DFD10019C205 /* Level_4.mp3 in Resources */,
+				7864931023C0B16700187933 /* Chomp.wav in Resources */,
+				D0386F611B0E734500E6D38C /* Main.storyboard in Resources */,
+				7864930F23C0B16700187933 /* Error.wav in Resources */,
+				7864930A23C0B16700187933 /* fire.mp3 in Resources */,
+				78F6581123C4DFD10019C205 /* Level_1.mp3 in Resources */,
+				7864931523C0B16700187933 /* Karibu Watu Wangu.mp3 in Resources */,
+				78F657FB23C4D8100019C205 /* LevelController.xib in Resources */,
+				9AB2BBB923E03D460088D4C7 /* GoogleService-Info.plist in Resources */,
+				7864931123C0B16700187933 /* MenuDecline.wav in Resources */,
+				7864930E23C0B16700187933 /* Scrape.wav in Resources */,
+				7864930B23C0B16700187933 /* button_press.wav in Resources */,
+				D0386F631B0E734500E6D38C /* Images.xcassets in Resources */,
+				7864930D23C0B16700187933 /* Ka-Ching.wav in Resources */,
+				78F6580E23C4DFD10019C205 /* Level_2.mp3 in Resources */,
+				03C7C2792221859C0078FE30 /* Launch Screen.storyboard in Resources */,
+				78F6581223C4DFD10019C205 /* Level_6.mp3 in Resources */,
+				7864931623C0B16700187933 /* MenuAccept.mp3 in Resources */,
+				7864930C23C0B16700187933 /* Level_10.mp3 in Resources */,
+				7864931323C0B16700187933 /* Level_8.mp3 in Resources */,
+				78F6581323C4DFD10019C205 /* Level_5.mp3 in Resources */,
+				78F6581023C4DFD10019C205 /* Level_3.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		401E59983FFD57169FAFA79F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoenixPuzzle/Pods-PhoenixPuzzle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoenixPuzzle/Pods-PhoenixPuzzle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		579B96DF7B124228DFAF8109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoenixPuzzle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0386F521B0E734500E6D38C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0386F5E1B0E734500E6D38C /* GameViewController.swift in Sources */,
+				9AB2BBB123E03B370088D4C7 /* RemoteConfigManager.swift in Sources */,
+				78A21DD323C6044B005023CC /* HapticManager.swift in Sources */,
+				9A619FEB220396FB001932C4 /* APIManager.swift in Sources */,
+				3F6CB4F2220432630034DD3A /* GameSettings.swift in Sources */,
+				D0386F5C1B0E734500E6D38C /* AppDelegate.swift in Sources */,
+				7864931923C0B21600187933 /* Settings.swift in Sources */,
+				9A619FEF22039894001932C4 /* MenuViewController.swift in Sources */,
+				3F6CB4F422045A630034DD3A /* SettingViewController.swift in Sources */,
+				9AB2BBB323E03B370088D4C7 /* AdSettingsStorage.swift in Sources */,
+				9AB2BBB223E03B370088D4C7 /* AdManager.swift in Sources */,
+				9AB2BBB423E03B370088D4C7 /* Keychain.swift in Sources */,
+				786492F923C0B08400187933 /* AudioManager.swift in Sources */,
+				3F6CB4EF220432630034DD3A /* Options.swift in Sources */,
+				9A619FF32205DA1F001932C4 /* GameOverViewController.swift in Sources */,
+				78F657F923C4D75B0019C205 /* LevelController.swift in Sources */,
+				9A619FED2203974B001932C4 /* LoadingViewController.swift in Sources */,
+				9AB2BBB723E03B540088D4C7 /* InitConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0386F5F1B0E734500E6D38C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0386F601B0E734500E6D38C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0386F731B0E734500E6D38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0386F741B0E734500E6D38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0386F761B0E734500E6D38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5976FFDCD98C1C5E4CB22D4 /* Pods-PhoenixPuzzle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JokerTiler/JokerTiler.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PNS557CH6G;
+				INFOPLIST_FILE = "$(SRCROOT)/PhoenixPuzzle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joke.tiller;
+				PRODUCT_NAME = "Phoenix Puzzle";
+				PROVISIONING_PROFILE_SPECIFIER = JokerTilerDistrubutionProvisionProfile;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D0386F771B0E734500E6D38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A785D6964096B8F2B9C8FA75 /* Pods-PhoenixPuzzle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JokerTiler/JokerTiler.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PNS557CH6G;
+				INFOPLIST_FILE = "$(SRCROOT)/PhoenixPuzzle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joke.tiller;
+				PRODUCT_NAME = "Phoenix Puzzle";
+				PROVISIONING_PROFILE_SPECIFIER = JokerTilerDistrubutionProvisionProfile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0386F511B0E734500E6D38C /* Build configuration list for PBXProject "PhoenixPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0386F731B0E734500E6D38C /* Debug */,
+				D0386F741B0E734500E6D38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0386F751B0E734500E6D38C /* Build configuration list for PBXNativeTarget "PhoenixPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0386F761B0E734500E6D38C /* Debug */,
+				D0386F771B0E734500E6D38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0386F4E1B0E734500E6D38C /* Project object */;
+}

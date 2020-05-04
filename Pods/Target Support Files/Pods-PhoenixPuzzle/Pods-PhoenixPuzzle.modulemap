@@ -1,0 +1,6 @@
+framework module Pods_PhoenixPuzzle {
+  umbrella header "Pods-PhoenixPuzzle-umbrella.h"
+
+  export *
+  module * { export * }
+}
